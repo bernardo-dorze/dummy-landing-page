@@ -35,7 +35,7 @@ ul {
 }
 .hero {
   display: flex;
-  flex: 3;
+  flex: 1;
   align-items: center;
   justify-content: center;
   gap: 48px;
@@ -81,20 +81,47 @@ a,
 }
 .information-container {
   display: flex;
-  flex: 2;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information-title{
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  margin: 36px;
+}
+
+.box-container{
+  display: flex;
+  gap: 48px;
+}
+
+.box{
+  width: 150px;
+}
+.box-text{
+  text-align: center;
+}
+
+.img{
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  height: 150px;
 }
 .quote-container {
   display: flex;
-  flex: 2;
+  flex: 1;
 }
 
 .pop-up-container {
   display: flex;
-  flex: 2;
+  flex: 1;
 }
 
 .footer {
-  flex: 1;
+  padding: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
