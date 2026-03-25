@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
 body {
   margin: 0;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
@@ -35,7 +35,7 @@ ul {
 }
 .hero {
   display: flex;
-  flex: 1;
+  flex: 1 0 500px;
   align-items: center;
   justify-content: center;
   gap: 48px;
@@ -53,7 +53,7 @@ ul {
 
 .hero-secondary-text,
 a,
-.footer {
+.footer, .hero-image-placeholder{
   font-size: 18px;
   color: #e4e7eb;
 }
@@ -75,13 +75,12 @@ a,
   width: 500px;
   height: 250px;
   background-color: #505c6d;
-  color: white;
   justify-content: center;
   align-items: center;
 }
 .information-container {
   display: flex;
-  flex: 1;
+  flex: 1 0 500px;
   flex-direction: column;
   align-items: center;
 }
@@ -96,6 +95,7 @@ a,
 .box-container{
   display: flex;
   gap: 48px;
+  flex-wrap: wrap;
 }
 
 .box{
@@ -103,16 +103,40 @@ a,
 }
 .box-text{
   text-align: center;
+  color: #505c6d;
 }
 
 .img{
-  border: 2px solid #3882f6;
+  border: 3px solid #3882f6;
   border-radius: 10px;
   height: 150px;
+  margin-bottom: 5px;
 }
+
 .quote-container {
+  background-color: #e5e7eb;
   display: flex;
-  flex: 1;
+  flex: 1 0 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-text-container{
+ display: flex;
+ flex-direction: column;
+ max-width: 800px;
+}
+.quote-text{
+  display: flex;
+  /* flex-wrap: wrap; */
+  font-size: 36px;
+  font-weight: 100;
+  color: #1f2937;
+}
+
+.signature{
+  align-self: flex-end;
+  /* margin-right: 100px; */
 }
 
 .pop-up-container {
