@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
@@ -18,7 +19,7 @@ body {
 .hero-logo-text {
   font-size: 24px;
   color: #f9faf8;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 ul {
@@ -56,6 +57,7 @@ a,
 .footer, .hero-image-placeholder{
   font-size: 18px;
   color: #e4e7eb;
+  font-weight: 400;
 }
 
 .hero-sign-up {
@@ -125,18 +127,27 @@ a,
  display: flex;
  flex-direction: column;
  max-width: 800px;
+ color: #1f2937;
+
+ 
 }
 .quote-text{
   display: flex;
-  /* flex-wrap: wrap; */
   font-size: 36px;
-  font-weight: 100;
-  color: #1f2937;
+  font-weight: 300;
+  
+}
+.em{
+  margin: 0;
+  padding: 0;
 }
 
 .signature{
   align-self: flex-end;
+  font-size: 24px;
+  font-weight: 700;
   /* margin-right: 100px; */
+  margin-right: 100px;
 }
 
 .pop-up-container {
