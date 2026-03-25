@@ -3,11 +3,22 @@
 
 body {
   margin: 0;
-  height: 100vh;
-  /* overflow: hidden; */
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
+}
+
+.header,
+.hero,
+.hero-sign-up,
+.pop-up,
+.pop-up-button {
+  color: #f9faf8;
+}
+
+.information-title, .quote-text-container {
+color: #1f2937;
 }
 
 .header {
@@ -17,9 +28,11 @@ body {
 }
 
 .hero-logo-text {
+  display: flex;
+  flex-shrink: 0;
   font-size: 24px;
-  color: #f9faf8;
-  font-weight: 900;
+  font-weight: 700;
+  margin-right: 30px;
 }
 
 ul {
@@ -36,10 +49,12 @@ ul {
 }
 .hero {
   display: flex;
-  flex: 1 0 500px;
+  flex: 1 0 600px;
   align-items: center;
   justify-content: center;
   gap: 48px;
+  flex-wrap: wrap;
+  row-gap: 0px;
 }
 
 .hero-text-container {
@@ -48,7 +63,6 @@ ul {
 }
 .hero-main-text {
   font-size: 48px;
-  color: #f9faf8;
   font-weight: 900;
 }
 
@@ -61,7 +75,8 @@ a,
   font-weight: 400;
 }
 
-.hero-sign-up, .pop-up-button {
+.hero-sign-up,
+.pop-up-button {
   margin: 16px 0;
   border: none;
   padding: 8px 32px;
@@ -70,13 +85,10 @@ a,
   border-radius: 8px;
 }
 
-
 .pop-up,
-.hero-sign-up, .pop-up-button {
+.hero-sign-up {
   background-color: #3882f6;
-  color: #f9faf8;
 }
-
 
 .hero-image-placeholder {
   display: flex;
@@ -97,9 +109,11 @@ a,
 .information-title {
   font-size: 36px;
   font-weight: 900;
-  color: #1f2937;
+  
   margin: 36px;
 }
+
+
 
 .box-container {
   display: flex;
@@ -134,7 +148,7 @@ a,
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  color: #1f2937;
+  
 }
 .quote-text {
   display: flex;
@@ -150,7 +164,6 @@ a,
   align-self: flex-end;
   font-size: 24px;
   font-weight: 700;
-  /* margin-right: 100px; */
   margin-right: 100px;
 }
 
@@ -168,6 +181,8 @@ a,
   justify-content: space-around;
   border-radius: 10px;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .pop-up-title {
@@ -175,9 +190,11 @@ a,
   font-weight: 700;
 }
 
-.pop-up-button{
+.pop-up-button {
   flex-shrink: 0;
   border: 2px solid #f9faf8;
+  background-color: transparent;
+  margin: 0px 20px;
 }
 
 .footer {
